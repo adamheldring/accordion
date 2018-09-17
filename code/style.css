@@ -1,4 +1,114 @@
 html {
-  background: #f2f1f4;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
   color: #19171c;
+}
+.header-text {
+  position: relative;
+  font-family: 'Lobster', cursive;
+  font-size: 100px;
+  line-height: 1;
+  color: #B3841B;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  padding: 20px;
+  text-align: center;
+}
+#header-shadow {
+  position: absolute;
+  color: rgba(0,0,0,1);
+  top: -40px;
+  z-index: -5
+}
+.accordion {
+  position: relative;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#hops {
+  position: absolute;
+  width: 700px;
+  left: -150px;
+  top: -40px;
+  z-index: -10
+}
+.title {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+div:nth-of-type(4n-1) {
+  background: #DFE1E0;
+}
+.accordion div:hover:nth-of-type(4n-1) {
+  background: rgb(203,205,204);
+}
+p {
+  margin-top: 0px;
+}
+.question {
+  margin-top: 15px;
+}
+.description {
+  display: none;
+  color: #000;
+  background: white;
+  margin: 0px;
+  padding: 15px 25px 20px 25px;
+}
+.active {
+  display: block;
+}
+div {
+  background: #DFBF59;
+  overflow: auto;
+}
+div.active + div.description {
+  display: block;
+}
+div.glass-box {
+  background: rgba(0,0,0,0);
+  background-image: url('./images/glassempty.png');
+  background-size: contain;
+  float: left;
+  width: 40px;
+  height: 64px;
+  display: block;
+}
+div.active .glass-box {
+  background-image: url('./images/glassfull.png');
+}
+div.title {
+  font-family: 'Abril Fatface', cursive;
+}
+div.title:hover {
+  cursor: grab;
+  background: rgb(203,171,69);
+}
+
+
+@media (max-width: 600px) {
+  .header-text {
+    font-size: 60px;
+  }
+  .accordion {
+    max-width: 400px;
+  }
+  div.title, div.description {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #hops {
+    max-width: 400px;
+    left: 0px;
+    top: -40px;
+    z-index: -10
+  }
 }
