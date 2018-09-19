@@ -68,9 +68,6 @@ div {
   background: #DFBF59;
   overflow: auto;
 }
-div.active + div.description {
-  display: block;
-}
 div.glass-box {
   background: rgba(0,0,0,0);
   background-image: url('./images/glassempty.png');
@@ -90,7 +87,6 @@ div.title:hover {
   cursor: grab;
   background: rgb(203,171,69);
 }
-
 
 @media (max-width: 600px) {
   .header-text {
