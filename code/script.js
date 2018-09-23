@@ -6,7 +6,7 @@ var descVisible = [false, false, false, false, false];
 function toggle(e) {
   this.classList.toggle("active");
   for (let i = 1; i <= 4; i++) {
-    if (this.id == "section" + i) {
+    if (this.id == "question" + i) {
       if (descVisible[i-1] == false) {
         $('#description' + i).slideDown(1000);
         descVisible[i-1] = true;
@@ -18,7 +18,7 @@ function toggle(e) {
   }
 }
 
-document.getElementById("section1").onclick = toggle;
-document.getElementById("section2").onclick = toggle;
-document.getElementById("section3").onclick = toggle;
-document.getElementById("section4").onclick = toggle;
+document.getElementById("question1").onclick = toggle;
+document.getElementById("question2").onclick = toggle;
+document.getElementById("question3").onclick = toggle;
+document.getElementById("question4").onclick = toggle;
